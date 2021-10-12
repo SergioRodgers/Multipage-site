@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="contact.css">
+  <div class="topnav">
+    <a class="active" href="http://127.0.0.1:5502/Home.html">Home</a>
+    <a href="http://127.0.0.1:5502/Timeline.html">Timeline</a>
+    <a href="http://127.0.0.1:5502/Contact.html">Contact</a>
+    <a href="http://127.0.0.1:5502/Testimonial.html">Testimonial</a>
+  </div>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <b>
-    </b>
-    <nav>
-        <ul>
-          <li><a href="http://127.0.0.1:5500/Home.html">Home</a></li> 
-          <br>
-          <li><a href="http://127.0.0.1:5500/about.html">about</a></li>
-          <br>
-          <li><a href="http://127.0.0.1:5500/Contact.html">contact</a></li>
-        </ul>
-      </nav>
-</head>
-<body>
     
-    <h1 font style="font-color="white" font-size:6px;">Contact Form</h1>      
-    <p style="font-size:20px;">Fill in the form below. </p>
+</head>
+<body>    
+    <p>Fill in the form below. </p>
 
-        <b>
-
-        </b>
-        Name:
+        
+    <form
+    action="https://formspree.io/f/xoqyborv"
+    method="POST"
+  >
+     
+      <label><center>
+        
+          Name:
         <input type="text" name="fname"
-        placeholder="Enter Name">
-      </label>
-      <br>
-      <br>
-      </form>
-      </form>
-      <label>
+          placeholder="Enter Name">
+          </label>
+        <br>
+        <br>
            Surname:
           <input type="text" name="sname"
           placeholder="Enter Surname">
@@ -58,8 +55,12 @@
           Message:
           <input type="text" name="message"
           placeholder="Type Message">
-          </label> </center> 
-        </label>
+            </label>  
+        </label></center>
+        <div>
+          <button type="submit" value="submit" id="subbut"></button>
+        <button type="reset" value="reset" id="resbut"></button></div>
+</form>
 </p>
 <p2 style="font-size:17px;">
     </p2>
